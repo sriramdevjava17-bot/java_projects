@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            background: linear-gradient(to left , #03f938 , #bac0c2);
+        }
+        div {
+            width: 320px;
+            height: 420px;
+            color: #000; 
+            top: 50%;
+            left: 50%;
+            padding: 60px 30px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            box-shadow: 8px 8px 50px rgba(0, 0, 0, 2.5);
+            background: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px; 
+        }
+        h1 {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 25px;
+            color: #1b1a1a; 
+            text-align: center;
+            margin-bottom: 25px; 
+        }
+        .input {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px; 
+            border: none;
+            border-bottom: 1px solid #ddd;
+            background: transparent;
+            outline: none;
+            font-size: 16px;
+            color: #333; 
+        }
+        #login {
+            border: none;
+            outline: none;
+            height: 40px;
+            background-color: #ca2822;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s; 
+        }
+        #login:hover {
+            background-color: #b71c1c; 
+        }
+
+       
+    </style>
+
+</head>
+<body >
+    <div>
+        <form name="loginForm" onsubmit="return validateForm()" method="post" action="loginpage.html">
+            <h1>THANK YOU</h1>
+            <input type="text" name="username" placeholder="Endusername" class="input"><br>
+            <input type="id" name="user-id" placeholder="Enduser-id" class="input"><br>
+            <input type="text" name="branch" placeholder="Enduser-branch" class="input"><br>
+            <input type="submit" value="SUBMIT" class="input" id="login">
+            
+        </form>
+    </div>
+    
+</body>
+</html>
